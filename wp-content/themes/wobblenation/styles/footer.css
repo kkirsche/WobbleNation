@@ -1,0 +1,123 @@
+/**************************************************************
+							FOOTER
+**************************************************************/
+
+#footer {
+	display: block;
+	width: 930px;
+	margin: 5px 0 5px 0;
+	position: relative;
+	padding: 5px 0;
+	/* color and background-color replaced at settings */
+}
+
+#footerwidgets {
+	display: block;
+	width: 930px;
+}
+
+.widgetb {
+	display: block;
+	width: 303px;
+	float: left;
+	list-style-type: none !important;
+	margin-left: 5px;
+	text-align: left;
+	margin-bottom: 0 !important;
+	font-size: 11px;
+	margin-top: 3px;
+}
+
+.widgetb p, .widgetb .textwidget {
+	/*line-height: 14px;*/
+}
+
+.widgetb a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.widgetb a:hover {
+	text-decoration: underline;
+}
+
+.widgetb_container li {
+	background-position: 0;
+	background-repeat: no-repeat;
+	padding-left: 0;
+	margin-bottom: 5px;
+}
+
+widgetb_container {
+	line-height: 15px;
+}
+
+.twitter_status li {
+	padding-left: 5px;
+	margin-bottom: 10px;
+	padding-bottom: 4px;
+	/* Background color replaced at settings */
+}
+
+.widgetb_container li a {
+	height: 20px;
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	background-position: 1px 1px;
+	line-height: 20px;
+	/* Color replaced at settings */
+}
+
+.widgetb_container li a:hover {
+	text-decoration: underline;
+}
+
+.widgetbtitle {
+	display: block;
+	height: 28px;
+	background-repeat: no-repeat;
+	font-size: 28px;
+	font-weight: normal;
+	margin-bottom: 5px;
+	padding: 3px 3px 1px 3px;
+	text-transform: uppercase;
+	text-align: left;
+	border-bottom: 2px solid #323232;
+	/* Font replacement with cufon */
+}
+
+.widgetpostlist {
+	margin-top: 5px !important;
+}
+
+.widgetpost {
+	margin-bottom: 4px;
+	line-height: 18px;
+	padding-left: 0 !important;
+}
+
+.widgetpost img {
+	display: block;
+	float: left;
+	margin: 0 5px 2px 0;
+	padding: 2px;
+	border: 2px Solid #232323;
+}
+
+.widgetpost a {
+	background-image: none !important;
+	margin-left: 0 !important;
+	padding: 0 !important;
+	height: auto !important;
+	line-height: normal !important;
+	/* Color replaced at settings */
+}
+
+.widgetpost p {
+	display: block;
+	width: 218px;
+	float: left;
+}

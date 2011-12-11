@@ -1,0 +1,24 @@
+/*
+Theme Name: WobbleNation
+Theme URI: http://thewobblenation.com
+Description: WobbleNation Blog Theme - Where the bass breaks your face!
+Version: 1.3
+Author: Kevin Kirsche
+Author URI: http://razerdesign.com
+Tags: fixed width, two columns, widgets, ajax
+*/
+
+/*Core*/
+@import url(reset.css);
+@import url(styles/common.css);
+
+/*Structure and general look*/
+@import url(styles/main.css);
+@import url(styles/sidebar.css);
+@import url(styles/footer.css);
+@import url(styles/sliders.css);
+/*@import url(styles/menu.css);*/
+
+/*Scripts*/
+@import url(styles/prettyPhoto.css);
+@import url(styles/nivo-slider.css);

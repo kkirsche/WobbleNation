@@ -1,0 +1,36 @@
+/**************************************************************
+							SLIDERS
+**************************************************************/
+
+/* MAIN SLIDER */
+
+#slider-container {
+	display: block;
+	width: 930px;
+	height: 330px;
+	margin: 0;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	background-color: #fff;
+	margin: 5px 0 0 0;
+}
+
+.slider_thumbnail {
+	margin: 5px 0 0 5px;
+	display: block;
+	float: left;
+}
+
+.slider_thumbnail img {
+	margin: 0 !important;
+}
+
+.slider_postdata {
+	padding: 10px;
+	background-image: url('../images/opacity_bg.png');
+}
+
+.current_slide {
+
+}

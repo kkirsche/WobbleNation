@@ -1,0 +1,640 @@
+/**
+ * Make Cufon replaced text look ok before all the scripts are loaded
+**/
+
+#categories_menu ul li a, #menu ul li a, #searchsubmit, #submit, .nivo-caption, .archive_title a, .widgettitle, .widgetbtitle, .nivo-caption p, .nivo-caption span, .post_title, .pagetitle, .archive .post-categories a, .category_item, .singlepost .post-categories a, .comments_number, .comments_text, .entry h1, .entry h3, .entry h4, .entry h5, .entry h6, .subtitle {
+	visibility: hidden;
+}
+
+.cufon-ready #categories_menu ul li a, .cufon-ready #menu ul li a, .cufon-ready #searchsubmit, .cufon-ready #submit, .cufon-ready .nivo-caption, .cufon-ready .archive_title a, .cufon-ready .widgettitle, .cufon-ready .widgetbtitle, .cufon-ready .nivo-caption p, .cufon-ready .nivo-caption span, .cufon-ready .post_title, .pagetitle, .cufon-ready .archive .post-categories a, .cufon-ready .category_item, .cufon-ready .singlepost .post-categories a, .cufon-ready .comments_number, .cufon-ready .comments_text, .cufon-ready .entry h1, .cufon-ready .entry h3, .cufon-ready .entry h4, .cufon-ready .entry h5, .cufon-ready .entry h6, .cufon-ready .subtitle {
+	visibility: visible;
+}
+
+body {
+	background-image: url('images/bg.jpg');
+	background-color: #1e1f20;
+	background-position: center;
+	background-repeat: repeat-x;
+	font-family: "Helvetica", "Arial", "Verdana", "Sans-Serif";
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	/* color -> colors.php */
+}
+
+html, body {
+    height: 100%;
+}
+
+p {
+	display: block;
+	line-height: 16px;
+	margin-bottom: 13px;
+}
+
+a {
+	_position: relative; /* Fixes IE issue with PNGFix */
+}
+
+a:hover {
+	_cursor: pointer; /* Fixes IE issue with PNGFix */
+}
+
+.entry a, #comments a, #respond a {
+	text-decoration: none;
+}
+
+.entry a:hover, #comments a:hover, #respond a:hover {
+	text-decoration: underline;
+}
+
+#container {
+	width: 930px;
+	margin: 0 auto;
+}
+
+#wrapper {
+	width: 930px;
+	background-image: url('../images/container_bg.png');
+	background-repeat: repeat;
+	text-align: center;
+	margin: 5px 0 25px 0;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+}
+
+.containerblock {
+	width: 930px;
+	_width: 940px;
+	margin: 5px auto;
+}
+
+.full_column {
+	width: 290px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+/*Header*/
+
+#header {
+	width: 930px;;
+	margin-top:15px;
+	padding: 0 10px;
+}
+
+#logo {
+	text-decoration: none;
+	float: left;
+	margin-top: 15px;
+}
+
+#menu {
+	height: 24px;
+	margin: 0;
+	text-align: left;
+	float: right;
+	padding: 5px 0;
+	position: relative;
+	left: 5px;
+}
+
+#menu ul {
+	float: left;
+	height: 24px;
+}
+
+#menu ul li {
+	float: left;
+	display: block;
+	margin-left: 10px;
+}
+
+#menu ul li a {
+	height: 18px;
+	padding: 3px;
+	text-decoration: none;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#menu ul li a:hover {
+	background-image: url('../images/opacity_bg.png');
+	background-repeat: repeat;
+}
+
+
+#social_links {
+	float: right;
+}
+
+.social {
+	display: block;
+	width: 16px;
+	height: 16px;
+	text-decoration: none;
+	text-indent: -9999px;
+	font-size: 0.1px;
+	margin-left: 5px;
+	float: left;
+}
+
+.rssfeed { background-image: url('../images/social_rss.png'); }
+.twitter { background-image: url('../images/social_twitter.png'); }
+.facebook { background-image: url('../images/social_facebook.png'); }
+
+#categories_menu {
+	width: 930px;
+	background-repeat: no-repeat;
+	text-align: left;
+	position: relative;
+	padding: 0;
+	z-index: 9999;
+}
+
+#categories_menu ul {
+	width: 600px;
+	float: left;
+}
+
+#categories_menu ul li {
+	float: left;
+	display: block;
+	position: relative;
+	margin-right: 5px;
+	padding: 4px 4px 2px 4px;
+}
+
+#categories_menu ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+
+.sub-menu {
+	position: absolute;
+	top: 28px;
+	left: 0;
+	display: none;
+	width: auto !important;
+	padding: 2px 0 7px 0;
+}
+
+.sub-menu li {
+	float: none !important;
+  	white-space: nowrap;
+}
+
+.sub-menu li a {
+	padding: 3px 5px;
+}
+
+/* Search form */
+
+#searchform {
+	width: 277px;
+	display: block;
+	float: right;
+}
+
+#searchform label {
+	display: none;
+}
+
+#s {
+	display: block
+	float: left;
+	width: 196px;
+	height: 22px;
+	border: 1px Solid #d2d2d2;
+	/* background color replaced at settings */
+}
+
+#searchsubmit {
+	display: block;
+	float: right;
+	margin: 0;
+	*display: inline;
+	*float: none;
+	*margin-left: 5px;
+	width: 72px;
+	height: 26px;
+	border: 0;
+	text-transform: uppercase;
+	font-size: 21px;
+	line-height: 24px;
+	padding-top: 5px;
+	*padding-top: 0;
+	cursor: pointer;
+	/* Font replaced with cufon */
+	/* color and background-color replaced at settings */
+}
+
+/* Content */
+
+#content {
+	width: 610px;
+	display: block;
+	text-align: left;
+	padding: 5px 0 5px 5px;
+	/* background-color -> colors.php */
+}
+
+#content_full {
+	width: 925px;
+	display: block;
+	text-align: left;
+	padding: 5px 0 5px 5px;
+	/* background-color -> colors.php */
+}
+
+.post {
+	display: block;
+	width: 300px;
+	height: 270px;
+	float: left;
+	margin: 0 5px 5px 0;
+}
+
+.singlepost {
+	display: block;
+	width: 583px;
+	height: auto;
+	margin: 0 0 10px 0;
+	text-align: left;
+	border: 1px Solid #d9d9d9;
+	padding: 10px;
+}
+
+.fullpost {
+	display: block;
+	width: 897px;
+	height: auto;
+	margin: 1px 0 0 0;
+	text-align: left;
+	border: 1px Solid #d9d9d9;
+	padding: 10px;
+}
+
+.entry {
+	margin-top: 4px;
+}
+
+.preview_data {
+	display: block;
+	width: 290px;
+	max-height: 140px;
+	overflow: hidden;
+	background-image: url('../images/post_title_bg.png');
+	padding: 5px 5px 2px 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.preview_image {
+	display: block;
+	position: relative;
+	width: 300px;
+	height: 150px;
+	height: 150px;
+}
+
+.preview_data img {
+	position: absolute;
+	display: block;
+	top: 0px;
+	left: 0;
+	z-index: 1;
+}
+
+.preview_text, .preview_comments {
+	position: relative;
+	z-index: 1;
+}
+
+.preview_text {
+	float: left;
+	display: block;
+	width: 223px;
+}
+
+.post_title {
+	font-size: 26px;
+	word-spacing: 3px;
+	text-transform: uppercase;
+	font-weight: normal;
+	position: relative;
+	top: 7px;
+	padding: 0;
+	margin: 0;
+	line-height: 34px;
+	/* Font replacement with cufon */
+	/* Color replaced at settings */
+}
+
+.pagetitle {
+	font-size: 26px;
+	word-spacing: 3px;
+	text-transform: uppercase;
+	font-weight: normal;
+	position: relative;
+	top: 7px;
+	padding: 0;
+	margin: 0 0 10px 0;
+	line-height: 34px;
+	/* Font replacement with cufon */
+	/* Color replaced at settings */
+}
+
+.archive_title {
+	text-align: left;
+	font-size: 24px;
+	text-transform: uppercase;
+	display: inline;
+}
+
+.archive_title a {
+	text-decoration: none;
+	font-weight: normal;
+	/* Font replacement with cufon */
+	/* Color replaced at settings */
+}
+
+.archive .post-categories {
+	float: right;
+	margin: 2px 0 10px 0;
+}
+
+.archive .post-categories a {
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 0 3px 1px 3px;
+	text-decoration: none;
+	line-height: 12px;
+	/* Font replacement with cufon */
+	/* background-color -> colors.php */
+}
+
+.category_item {
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 3px;
+	text-decoration: none;
+	margin-right: 5px;
+	/* Font replacement with cufon */
+	/* background-color -> colors.php */
+}
+
+.singlepost .post-categories {
+	display: block;
+	margin: 6px 0 0 0;
+}
+
+.singlepost .post-categories li {
+	display: block;
+	float: left;
+}
+
+.singlepost .post-categories a {
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 3px 3px 1px 3px;
+	float: left;
+	text-decoration: none;
+	/* Font replacement with cufon */
+	/* background-color -> colors.php */
+}
+
+.entry p, .entry ul, .entry ol {
+	line-height: 18px;
+}
+
+.entry ul {
+	list-style-type: disc;
+	margin-left: 16px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.entry ul li {
+	margin-bottom: 6px;
+}
+
+.entry ol {
+	list-style-type: decimal;
+	margin-left: 16px;
+	display: block;
+	margin-bottom: 12px;
+}
+
+.entry ol li {
+	margin-bottom: 6px;
+}
+
+.entry blockquote {
+	padding: 10px;
+	font-style: italic;
+	margin-bottom: 10px;
+	/* Color replaced at settings */
+}
+
+.entry h1, .entry h3, .entry h4, .entry h5, .entry h6 {
+	margin-bottom: 6px;
+}
+
+.entry h1 { font-size: 32px; }
+.entry h3 { font-size: 28px; }
+.entry h4 { font-size: 26px; }
+.entry h5 { font-size: 24px; }
+.entry h6 { font-size: 22px; }
+
+.date {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 3px;
+	font-size: 11px;
+	/* color -> colors.php */
+}
+
+.preview_text p {
+	line-height: 18px;
+}
+
+.preview_comments {
+	width: 73px;
+	text-align: center;
+	float: left;
+	display: block;
+	margin-top: 22px;
+}
+
+.comments_number, .comments_texts {
+	display: block;
+	width: 75px;
+	/* color -> colors.php */
+}
+
+.comments_number {
+	font-size: 44px;
+	margin-bottom: 7px;
+	/* Font replacement with cufon */
+}
+
+.comments_text {
+	/* Font replacement with cufon */
+	/* Color replaced at settings */
+}
+
+/* Navigation */
+
+#navigation {
+	display: block;
+	text-align: right;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#navigation ul {
+	display: block;
+	float: right;
+	position: relative;
+}
+
+.navigation_item {
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+.navigation_item a {
+	text-decoration: none;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+	/* Color and Background color replaced at settings */
+}
+
+/* COMMENTS */
+
+#comments {
+	display: block;
+	margin-top: 15px !important;
+}
+
+#comments_list {
+	width: 583px;
+	padding: 10px;
+	border: 1px Solid #d9d9d9;
+}
+
+.subtitle {
+	font-size: 22px;
+	word-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: normal;
+	position: relative;
+	padding: 0;
+	margin: 10px 0 5px 0;
+	/* Font replacement with cufon */
+	/* Color replaced at settings */>
+}
+
+.subtitle a {
+	text-decoration: underline;
+	/* Color replaced at settings */
+}
+
+.comment {
+	width: 563px;
+	padding: 10px;
+	margin-bottom: 10px;
+	/* Color replaced at settings */
+}
+
+.comment img {
+	float: left;
+	padding: 2px;
+	border: 2px solid #ddd;
+}
+
+.comment_entry {
+	width: 505px;
+	float: right;
+}
+
+.comment_meta {
+	font-weight: bold;
+}
+
+#reply {
+	width: 583px;
+	padding: 10px;
+	border: 1px Solid #d9d9d9;
+}
+
+#reply label {
+	display: block;
+	width: 100%;
+	font-weight: bold;
+}
+
+.inputtext {
+	display: block
+	float: left;
+	width: 350px;
+	height: 22px;
+	border: 1px Solid #d2d2d2;
+	margin-bottom: 10px;
+	/* background-color at settings */
+}
+
+.inputarea {
+	display: block
+	float: left;
+	width: 350px;
+	height: 150px;
+	border: 1px Solid #d2d2d2;
+	margin-bottom: 10px;
+	/* background-color replaced at settings */
+}
+
+.inputbutton {
+	display: block;
+	width: 120px;
+	height: 26px;
+	border: 0;
+	text-transform: uppercase;
+	font-size: 21px;
+	line-height: 18px;
+	padding-top: 5px;
+	margin-left: 0;
+	cursor: pointer;
+	position: relative;
+	left: 236px;
+	font-family: "Helvetica", "Arial", "Sans-Serif" !important;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#submit {
+	display: block;
+	width: 120px;
+	height: 26px;
+	border: 0;
+	text-transform: uppercase;
+	font-size: 21px;
+	line-height: 24px;
+	padding-top: 5px;
+	margin-left: 0;
+	cursor: pointer;
+	position: relative;
+	left: 236px;
+	/* Font replaced with cufon */
+	/* color and background-color replaced at settings */
+}
+

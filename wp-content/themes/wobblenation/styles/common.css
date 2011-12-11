@@ -1,0 +1,71 @@
+/**************************************************************
+							STYLING
+**************************************************************/
+
+.alignleft {
+	float: left;
+	margin: 3px 10px 6px 0;
+	_display: inline;
+}
+
+.withborder {
+	border: 1px solid #d9d9d9;
+	padding: 2px;
+}
+
+.alignright {
+	float: right;
+	margin: 3px 0 6px 10px;
+	_display: inline;
+}
+
+.aligncenter {
+	display: block;
+	text-align: center;
+	margin: 0 auto 5px auto;
+}
+
+.icon {
+	margin: 0 5px 0 0;
+	position: relative;
+	top: 4px;
+}
+
+.nomarginright {
+	margin-right: 0 !important;
+}
+
+/**************************************************************
+							HELPERS
+**************************************************************/
+
+.warning {
+	color: #de5858 !important;
+}
+
+.success {
+	color: #c3e999 !important;
+}
+
+.clearer {
+	width: 1px;
+	height: 1px;
+	clear: both;
+	visibility: hidden !important;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	_display: none;
+	_position: relative;
+	_left: -9999px;
+}
+
+#demotip { 
+	display: none;
+    font-size:11px;
+	font-weight: bold;
+    color: #262626;
+    border: 1px Solid #262626;
+    background-color: #fff;
+    padding: 3px;
+}

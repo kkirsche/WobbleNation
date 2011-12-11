@@ -1,0 +1,73 @@
+/**************************************************************
+							SIDEBAR
+**************************************************************/
+
+#sidebar {
+	display: block;
+	width: 310px;
+	float: left
+	padding: 0;
+	_display: inline;
+}
+
+.widget {
+	margin-bottom: 5px !important;
+	list-style-type: none !important;
+	padding: 5px;
+	text-align: left;
+	/* background-color -> colors.php */
+}
+
+.widget_container th, .widget_container td {
+	padding: 3px;
+	border: 2px solid #fff;
+	/* background color replaced at settings */
+}
+
+.widget_container li {
+	padding: 0;
+	margin: 4px 0 2px 0;
+	width: 300px;
+	/* background-color -> colors.php */
+}
+
+#sidebar a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+}
+
+#sidebar .widget_container li a {
+	height: 20px;
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	background-image: url('../images/widget_bullet.png');
+	background-repeat: no-repeat;
+	background-position: 1px 1px;
+	padding-left: 18px;
+	line-height: 20px;
+	/* Color replaced at settings */ 
+}
+
+.widget_container a:hover {
+	text-decoration: underline;
+}
+
+.widgettitle {
+	display: block;
+	height: 28px;
+	background-repeat: no-repeat;
+	font-size: 30px;
+	font-weight: normal;
+	margin-bottom: 5px;
+	padding: 5px 5px 1px 5px;
+	text-transform: uppercase;
+	text-align: left;
+	/* background-color -> colors.php */
+	/* color -> colors.php */
+	/* Font replacement with cufon */
+}
