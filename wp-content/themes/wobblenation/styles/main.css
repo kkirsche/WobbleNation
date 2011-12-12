@@ -279,7 +279,8 @@ a:hover {
 }
 
 .entry {
-	margin-top: 4px;
+	margin-top: 6px;
+	line-height: 150%;
 }
 
 .preview_data {

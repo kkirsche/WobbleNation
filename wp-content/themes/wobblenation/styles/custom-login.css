@@ -1,0 +1,9 @@
+/* Wordpress Logo Replacement */
+h1 a {	
+	background:url(http://thewobblenation.com/wp-content/themes/wobblenation/images/login-logo.png) 0 0 no-repeat;
+	width:290px;
+	height:150px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+} 

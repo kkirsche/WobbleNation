@@ -71,7 +71,7 @@ $defaults = array(
     'ts_text_color' => '#4f4f4f', // Main text
     'ts_alt_text_color' => '#aeaeae', // Alternate text
     'ts_link_color' => '#9c9995', // Links
-    'ts_text_bg_color' => '#f2eee9', // Taxt background
+    'ts_text_bg_color' => '#f2eee9', // Text background
     
     //TEMPLATE DEFAULTS
     

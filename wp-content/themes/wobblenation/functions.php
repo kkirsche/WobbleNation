@@ -253,4 +253,48 @@ function theme_filters($content) {
 	
 }
 
+/*------------------------------Admin / Login Customization-------------------*/
+//Remove Default Dashboard Widgets
+add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
+
+function my_custom_dashboard_widgets() {
+   global $wp_meta_boxes;
+
+   unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
+   unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
+   unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
+
+   wp_add_dashboard_widget('custom_help_widget', 'Welcome!', 'custom_dashboard_help');
+}
+
+//Custom Dashboard Help Widget
+function custom_dashboard_help() {
+	echo '<p>Welcome to WobbleNation! We hope you enjoy your stay. Here, we share the dirtiest, and best of dubstep from around the world!</p>';
+}
+
+//Change Login Page URL
+function change_wp_login_url() {
+echo bloginfo('url');
+}
+add_filter('login_headerurl', 'change_wp_login_url');
+
+//Change Logo Title
+function change_wp_login_title() {
+echo 'Powered by ' . get_option('blogname');
+}
+add_filter('login_headertitle', 'change_wp_login_title');
+
+//Custom Login CSS
+function custom_login() {
+ echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('template_directory') . '/styles/custom-login.css" />';
+}
+add_action('login_head', 'custom_login');
+
+//Change Admin footer text
+function modify_footer_admin () {
+  echo 'Created by <a href="http://razerdesign.com">Kevin Kirsche</a>. ';
+  echo '| The drop was so dirty that when my mom walked in, I switched to porn.</span> | <a href="http://codex.wordpress.org/" target="blank">Documentation</a>';
+}
+
+add_filter('admin_footer_text', 'modify_footer_admin');
 ?>
