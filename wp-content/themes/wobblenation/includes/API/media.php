@@ -5,8 +5,8 @@
  * For use only with the purchased theme
  *
  * Since: Wordpress 3.0
- * Author: Oscar Alcala
- * Website: http://www.oscaralcala.com
+ * Author: Kevin Kirsche
+ * Website: http://www.razerdesign.com
  * 
  * @package WordPress
 **/

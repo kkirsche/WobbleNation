@@ -43,7 +43,7 @@ $defaults = array(
     
     // TWITTER OPTIONS
     'ts_twitter_automatic' => 0, 
-    'ts_twitter_default_message' => 'New post on %blogname%: %permalink%', // Default message for twitter notifications
+    'ts_twitter_default_message' => 'New from %blogname%: Check out our new post! %permalink%', // Default message for twitter notifications
     
     // LOGO OPTIONS
     'ts_logo_url' => $styledir . '/images/logo.png', // Logo default location

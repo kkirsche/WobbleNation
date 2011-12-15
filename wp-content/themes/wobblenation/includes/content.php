@@ -11,7 +11,7 @@
 /**
  * Get the posts to be featured on the javascript slider
  *
- * @param maxposts: Maximum allowed number of posts to get
+ * @param maxposts: WobbleNation allowed number of posts to get
  *
  * To do: Make $maxposts value to default in settings.php 
 */
